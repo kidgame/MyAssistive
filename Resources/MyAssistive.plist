@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+	<key>title</key>
+    <string>MyAssistive</string>
+    <key>entry</key>
+    <dict>
+      <key>cell</key>
+      <string>PSLinkCell</string>
+      <key>icon</key>
+      <string>MyAssistive.png</string>
+      <key>label</key>
+      <string>MyAssistive</string>
+    </dict>
+  	<key>items</key>
+	<array>
+		<dict>
+        	<key>cell</key>
+        	<string>PSGroupCell</string>
+        	<key>label</key>
+        	<string>Repurpose</string>
+        	<key>footerText</key>
+			<string>For Adjust Volume and Mute
+Button at Left-side will functional as Increase/Unmute Volume
+and Right-side as Decrease/Mute Volume.</string>
+      </dict>
+    	<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaule</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.PS.MyAssistive</string>
+			<key>key</key>
+			<string>replaceEnabled</string>
+			<key>label</key>
+			<string>Enable</string>
+			<key>PostNotification</key>
+        	<string>com.PS.MyAssistive.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.PS.MyAssistive</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>myNumber</string>
+			<key>footerText</key>
+			<string>For Adjust Volume and Mute, button at Left-side will functional as Increase/Unmute Volume, for Right-side as Decrease/Mute Volume.</string>
+			<key>label</key>
+			<string>Replace with</string>
+			<key>PostNotification</key>
+        	<string>com.PS.MyAssistive.settingschanged</string>
+			<key>validTitles</key>
+			<array>
+				<string>Original</string>
+				<string>Toggle App Switcher</string>
+				<string>Toggle Siri</string>
+				<string>Toggle Voice Control</string>
+				<string>Take Screenshot</string>
+				<string>Triple Click</string>
+				<string>Adjust Volume</string>
+				<string>Mute / Unmute</string>
+				<string>Restart SpringBoard</string>
+				<string>Reboot</string>
+				<string>Power Down</string>
+				<string>Sleep Button</string>
+				<string>Home Button</string>
+				<string>Quit Top Application</string>
+				<string>Lock Device</string>
+				<string>Rotate Screen (CW)</string>
+				<string>Rotate Screen (CCW)</string>
+				<string>Flash Toggle</string>
+				<string>Safe mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>10</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+				<integer>16</integer>
+				<integer>17</integer>
+				<integer>18</integer>
+				<integer>19</integer>
+			</array>
+		</dict>
+		<dict>
+        <key>cell</key>
+        <string>PSGroupCell</string>
+        <key>label</key>
+        <string>IMPORTANT</string>
+        <key>footerText</key>
+        <string>If you want functions "Reboot" and "Power down" to work without SBSettings, click the button to view instructions. (via PasteBin)</string>
+      </dict>
+       <dict>
+			<key>action</key>
+			<string>enterPastebin:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>View Instructions</string>
+		</dict>
+		<dict>
+        <key>cell</key>
+        <string>PSGroupCell</string>
+        <key>label</key>
+        <string>Modifications</string>
+        <key>footerText</key>
+        <string>*When you take Screenshot, just like in iOS 5</string>
+      </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaule</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.PS.MyAssistive</string>
+			<key>key</key>
+			<string>noLockPosEnabled</string>
+			<key>label</key>
+			<string>No Snap Position</string>
+			<key>PostNotification</key>
+        	<string>com.PS.MyAssistive.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaule</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.PS.MyAssistive</string>
+			<key>key</key>
+			<string>noHideSSEnabled</string>
+			<key>label</key>
+			<string>No Hide*</string>
+			<key>PostNotification</key>
+        	<string>com.PS.MyAssistive.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaule</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.PS.MyAssistive</string>
+			<key>key</key>
+			<string>blueIconEnabled</string>
+			<key>label</key>
+			<string>Blue Icons</string>
+			<key>PostNotification</key>
+        	<string>com.PS.MyAssistive.settingschanged</string>
+		</dict>
+      <dict>
+        <key>cell</key>
+        <string>PSGroupCell</string>
+        <key>footerText</key>
+        <string>© 2013 Thuchapol Unprasert
+(@PoomSmart)</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

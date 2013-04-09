@@ -1,0 +1,9 @@
+Package: com.PS.MyAssistive
+Name: MyAssistive
+Depends: mobilesubstrate, preferenceloader, firmware (>= 6.0)
+Version: 1.2
+Architecture: iphoneos-arm
+Description: Replace your unused Assistive Touch Button!
+Author: PoomSmart
+Section: Tweaks
+Icon: file:///Library/PreferenceBundles/MyAssistiveSettings.bundle/MyAssistive@2x.png

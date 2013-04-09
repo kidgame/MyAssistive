@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "You may need to reboot iDevice to take effect."
+cd /var/mobile/Library/SBSettings/Commands
+chmod 755 com.ps.reboot com.ps.halt
+
+exit 0
+ 
